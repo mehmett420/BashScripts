@@ -11,8 +11,8 @@ then
     bash ~/kontrol1
     if [ $0 = "line" ]
     then
-        echo "Script hatalidir."
-    else
         echo "Scripts calisiyor."
+    else
+        echo "Script hatalidir."
     fi
 fi
