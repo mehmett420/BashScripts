@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "disk kontrol icin 1 script calistirak icin 2 ye basiniz" secim
+read -p "disk kontrol icin 1 script calistirmak icin 2 ye basiniz" secim
 if [ $secim = "1" ]
 then
     cd
