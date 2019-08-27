@@ -2,17 +2,19 @@
 read -p "disk kontrol icin 1 script calistirak icin 2 ye basiniz" secim
 if [ $secim = "1" ]
 then
-    cd #Dizin
+    cd
+    cd #dosya yeri
     du -ah
 elif [ $secim = "2" ]
 then
-    cd #Dizin
-    chmod +x #filename
-    bash #filename
-    if [ $0 = "line" ]
+    cd
+    cd #kontrol edilecek dosya yeri
+    chmod +x #kontrol edilecek dosya izni
+    bash #calistirilacak dosya
+    if [ $? -eq 0 ]
     then
-        echo "Script Hatali."
+        echo "Script çalışıyor."
     else
-        echo "Script Calisiyor."
+        echo "Script Hatalı."
     fi
 fi
